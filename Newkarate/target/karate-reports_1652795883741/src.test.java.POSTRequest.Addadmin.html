@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.POSTRequest.Addadmin</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-04-28 07:55:41 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Add admin to Event</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:25]"><span>[2:25]</span> <span>Remove admin from Event by owner</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:33]"><span>[3:33]</span> <span>Add admin to Event by owner</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:51]"><span>[4:51]</span> <span>Remove admin from Event by Admin</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:59]"><span>[5:59]</span> <span>Remove admin from Event by Normaluser</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/POSTRequest/Addadmin.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Add admin to event by Event owner</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Add admin to Event</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1593</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseurl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/services/event/v1/event/c9k0mkiqe7dispa328vg/admins&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># we will send attendee id in the request body</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">93</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.10">{
+      
+ &quot;assignedAttendeeIds&quot;: [&quot;c9kj73t1mr2285sljc8g&quot;]
+      
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = MikeOwnertokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1433</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">19:55:37.097 request:
+1 &gt; POST https://qa.bravvox.com/services/event/v1/event/c9k0mkiqe7dispa328vg/admins
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiYzhldnNyZGtoNGRvNzIyamJzZTAiLCJ1c2VybmFtZSI6Ik1pa2UiLCJyb2xlIjoiIiwibmFtZSI6Ik1pa2UiLCJlbWFpbCI6ImphZ2FucHJlZXQuc2luZ2grMDEyQGJyYXZ2b3guY29tIiwicGhvbmUiOiIiLCJpc0FkbWluIjpmYWxzZSwiaXNDb250ZW50Q3JlYXRvciI6ZmFsc2UsImlzVmVyaWZpZWQiOnRydWUsInN0YXR1cyI6ImFjdGl2ZSIsImluZmx1ZW5jZXJTdGF0dXMiOmZhbHNlLCJleHAiOjE2NTExNTcyNTYsImlhdCI6MTY1MTEzOTI1NiwiaXNzIjoiQnJhdnZveCJ9.cjyrRW_4DD_kuH4W2iiGFml6_0slv-O6jUL8ZVMOZ98
+1 &gt; Content-Length: 48
+1 &gt; Host: qa.bravvox.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;assignedAttendeeIds&quot;:[&quot;c9kj73t1mr2285sljc8g&quot;]}
+
+19:55:38.150 response time in milliseconds: 1049
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 28 Apr 2022 14:25:37 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 78
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;data&quot;:null,&quot;error&quot;:false,&quot;message&quot;:&quot;successfully added admins&quot;,&quot;status&quot;:200}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">60</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">19:55:38.213 [print] {
+  &quot;data&quot;: null,
+  &quot;error&quot;: false,
+  &quot;message&quot;: &quot;successfully added admins&quot;,
+  &quot;status&quot;: 200
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:25]</span>
+                <span class="scenario-name">Remove admin from Event by owner</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>833</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseurl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/services/event/v1/event/c9k0mkiqe7dispa328vg/admin/c9kj73t1mr2285sljc8g&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = MikeOwnertokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">831</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">19:55:38.226 request:
+1 &gt; DELETE https://qa.bravvox.com/services/event/v1/event/c9k0mkiqe7dispa328vg/admin/c9kj73t1mr2285sljc8g
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiYzhldnNyZGtoNGRvNzIyamJzZTAiLCJ1c2VybmFtZSI6Ik1pa2UiLCJyb2xlIjoiIiwibmFtZSI6Ik1pa2UiLCJlbWFpbCI6ImphZ2FucHJlZXQuc2luZ2grMDEyQGJyYXZ2b3guY29tIiwicGhvbmUiOiIiLCJpc0FkbWluIjpmYWxzZSwiaXNDb250ZW50Q3JlYXRvciI6ZmFsc2UsImlzVmVyaWZpZWQiOnRydWUsInN0YXR1cyI6ImFjdGl2ZSIsImluZmx1ZW5jZXJTdGF0dXMiOmZhbHNlLCJleHAiOjE2NTExNTcyNTYsImlhdCI6MTY1MTEzOTI1NiwiaXNzIjoiQnJhdnZveCJ9.cjyrRW_4DD_kuH4W2iiGFml6_0slv-O6jUL8ZVMOZ98
+1 &gt; Host: qa.bravvox.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:55:39.054 response time in milliseconds: 828
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 28 Apr 2022 14:25:38 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 90
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;data&quot;:null,&quot;error&quot;:false,&quot;message&quot;:&quot;successfully removed admin from event&quot;,&quot;status&quot;:200}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">19:55:39.056 [print] {
+  &quot;data&quot;: null,
+  &quot;error&quot;: false,
+  &quot;message&quot;: &quot;successfully removed admin from event&quot;,
+  &quot;status&quot;: 200
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:33]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:33]</span>
+                <span class="scenario-name">Add admin to Event by owner</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>859</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:33]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:33]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseurl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/services/event/v1/event/c9k0mkiqe7dispa328vg/admins&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># we will send attendee id in the request body</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.36">{
+      
+ &quot;assignedAttendeeIds&quot;: [&quot;c9kj73t1mr2285sljc8g&quot;]
+      
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = MikeOwnertokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">856</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">19:55:39.065 request:
+1 &gt; POST https://qa.bravvox.com/services/event/v1/event/c9k0mkiqe7dispa328vg/admins
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiYzhldnNyZGtoNGRvNzIyamJzZTAiLCJ1c2VybmFtZSI6Ik1pa2UiLCJyb2xlIjoiIiwibmFtZSI6Ik1pa2UiLCJlbWFpbCI6ImphZ2FucHJlZXQuc2luZ2grMDEyQGJyYXZ2b3guY29tIiwicGhvbmUiOiIiLCJpc0FkbWluIjpmYWxzZSwiaXNDb250ZW50Q3JlYXRvciI6ZmFsc2UsImlzVmVyaWZpZWQiOnRydWUsInN0YXR1cyI6ImFjdGl2ZSIsImluZmx1ZW5jZXJTdGF0dXMiOmZhbHNlLCJleHAiOjE2NTExNTcyNTYsImlhdCI6MTY1MTEzOTI1NiwiaXNzIjoiQnJhdnZveCJ9.cjyrRW_4DD_kuH4W2iiGFml6_0slv-O6jUL8ZVMOZ98
+1 &gt; Content-Length: 48
+1 &gt; Host: qa.bravvox.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;assignedAttendeeIds&quot;:[&quot;c9kj73t1mr2285sljc8g&quot;]}
+
+19:55:39.916 response time in milliseconds: 850
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 28 Apr 2022 14:25:39 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 78
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;data&quot;:null,&quot;error&quot;:false,&quot;message&quot;:&quot;successfully added admins&quot;,&quot;status&quot;:200}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">19:55:39.921 [print] {
+  &quot;data&quot;: null,
+  &quot;error&quot;: false,
+  &quot;message&quot;: &quot;successfully added admins&quot;,
+  &quot;status&quot;: 200
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:51]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:51]</span>
+                <span class="scenario-name">Remove admin from Event by Admin</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>824</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:51]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:51]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseurl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/services/event/v1/event/c9k0mkiqe7dispa328vg/admin/c9kj73t1mr2285sljc8g&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = NuraAdmintoken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">821</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.55">19:55:39.947 request:
+1 &gt; DELETE https://qa.bravvox.com/services/event/v1/event/c9k0mkiqe7dispa328vg/admin/c9kj73t1mr2285sljc8g
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiYzhlN3JnZmtzcWE4NDB1MTc2czAiLCJ1c2VybmFtZSI6Ik51cmEiLCJyb2xlIjoiIiwibmFtZSI6Ik51cmEgYnJvb2tseW4gYWxiZXJ0YSBjYW5hZGEiLCJlbWFpbCI6ImRhdGF0ZXN0NjE2KzAzOEBnbWFpbC5jb20iLCJwaG9uZSI6IiIsImlzQWRtaW4iOmZhbHNlLCJpc0NvbnRlbnRDcmVhdG9yIjpmYWxzZSwiaXNWZXJpZmllZCI6dHJ1ZSwic3RhdHVzIjoiYWN0aXZlIiwiaW5mbHVlbmNlclN0YXR1cyI6ZmFsc2UsImV4cCI6MTY1MTE3MTA0NywiaWF0IjoxNjUxMTUzMDQ3LCJpc3MiOiJCcmF2dm94In0.yxR5HeSYyGt8cUR5T0Lk7mUteqhHglZ2BCo48EeXfJ4
+1 &gt; Host: qa.bravvox.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:55:40.761 response time in milliseconds: 814
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 28 Apr 2022 14:25:40 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 90
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;data&quot;:null,&quot;error&quot;:false,&quot;message&quot;:&quot;successfully removed admin from event&quot;,&quot;status&quot;:200}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.57">19:55:40.765 [print] {
+  &quot;data&quot;: null,
+  &quot;error&quot;: false,
+  &quot;message&quot;: &quot;successfully removed admin from event&quot;,
+  &quot;status&quot;: 200
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:59]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:59]</span>
+                <span class="scenario-name">Remove admin from Event by Normaluser</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>824</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:59]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:59]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseurl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/services/event/v1/event/c9k0mkiqe7dispa328vg/admin/c9kj73t1mr2285sljc8g&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = AndyEventAttendee</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">822</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.63">19:55:40.786 request:
+1 &gt; DELETE https://qa.bravvox.com/services/event/v1/event/c9k0mkiqe7dispa328vg/admin/c9kj73t1mr2285sljc8g
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiYzhnczA0Z3ZnbnBwdmw4bjR1YWciLCJ1c2VybmFtZSI6IkFuZHkiLCJyb2xlIjoiIiwibmFtZSI6IkFuZHkiLCJlbWFpbCI6InJ1cGVzaC5raG9zbGErMDVAYnJhdnZveC5jb20iLCJwaG9uZSI6IiIsImlzQWRtaW4iOmZhbHNlLCJpc0NvbnRlbnRDcmVhdG9yIjpmYWxzZSwiaXNWZXJpZmllZCI6dHJ1ZSwic3RhdHVzIjoiYWN0aXZlIiwiaW5mbHVlbmNlclN0YXR1cyI6ZmFsc2UsImV4cCI6MTY1MTE3MTA4OCwiaWF0IjoxNjUxMTUzMDg4LCJpc3MiOiJCcmF2dm94In0.sClnikqqhKDOPCoJiNGAuj8w3gJaPNUyPkDk2JIzLDk
+1 &gt; Host: qa.bravvox.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:55:41.602 response time in milliseconds: 815
+1 &lt; 400
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 28 Apr 2022 14:25:41 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 131
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;code&quot;:400,&quot;data&quot;:null,&quot;error&quot;:true,&quot;message&quot;:&quot;only owner can remove admin or admin can remove himself: bad request&quot;,&quot;status&quot;:400}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.64">19:55:41.606 src/test/java/POSTRequest/Addadmin.feature:64
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 815, url: https://qa.bravvox.com/services/event/v1/event/c9k0mkiqe7dispa328vg/admin/c9kj73t1mr2285sljc8g, response: 
+{&quot;code&quot;:400,&quot;data&quot;:null,&quot;error&quot;:true,&quot;message&quot;:&quot;only owner can remove admin or admin can remove himself: bad request&quot;,&quot;status&quot;:400}
+src/test/java/POSTRequest/Addadmin.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

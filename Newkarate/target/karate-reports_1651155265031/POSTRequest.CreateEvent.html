@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>POSTRequest.CreateEvent</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-04-28 07:08:45 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>User able to create a Event</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">POSTRequest/CreateEvent.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Create Event</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">User able to create a Event</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2296</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseurl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/services/event/v1/event&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8">{
+    &quot;title&quot;: &quot;National Game of Cricket&quot;,
+    &quot;subtitle&quot;: &quot;National Level Of Game&quot;,
+    &quot;details&quot;: &quot;All State of Player are playing to Cricket&quot;,
+    &quot;eventStartTime&quot;: &quot;2023-11-22T06:20:00Z&quot;,
+    &quot;eventEndTime&quot;: &quot;2023-12-22T11:30:00Z&quot;,
+    &quot;location&quot;: &quot;https://www.google.com/maps/place/Pune,+Maharashtra/&quot;,
+    &quot;isModerated&quot;: false,
+    &quot;isPostingOpen&quot;: false,
+    &quot;isPublic&quot;: false,
+    &quot;requireAttendeeApproval&quot;: false
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = MikeOwnertokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2260</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">19:08:43.743 request:
+1 &gt; POST https://qa.bravvox.com/services/event/v1/event
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb2N1bWVudElEIjoiYzhldnNyZGtoNGRvNzIyamJzZTAiLCJ1c2VybmFtZSI6Ik1pa2UiLCJyb2xlIjoiIiwibmFtZSI6Ik1pa2UiLCJlbWFpbCI6ImphZ2FucHJlZXQuc2luZ2grMDEyQGJyYXZ2b3guY29tIiwicGhvbmUiOiIiLCJpc0FkbWluIjpmYWxzZSwiaXNDb250ZW50Q3JlYXRvciI6ZmFsc2UsImlzVmVyaWZpZWQiOnRydWUsInN0YXR1cyI6ImFjdGl2ZSIsImluZmx1ZW5jZXJTdGF0dXMiOmZhbHNlLCJleHAiOjE2NTExNTcyNTYsImlhdCI6MTY1MTEzOTI1NiwiaXNzIjoiQnJhdnZveCJ9.cjyrRW_4DD_kuH4W2iiGFml6_0slv-O6jUL8ZVMOZ98
+1 &gt; Content-Length: 368
+1 &gt; Host: qa.bravvox.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;title&quot;:&quot;National Game of Cricket&quot;,&quot;subtitle&quot;:&quot;National Level Of Game&quot;,&quot;details&quot;:&quot;All State of Player are playing to Cricket&quot;,&quot;eventStartTime&quot;:&quot;2023-11-22T06:20:00Z&quot;,&quot;eventEndTime&quot;:&quot;2023-12-22T11:30:00Z&quot;,&quot;location&quot;:&quot;https:\/\/www.google.com\/maps\/place\/Pune,+Maharashtra\/&quot;,&quot;isModerated&quot;:false,&quot;isPostingOpen&quot;:false,&quot;isPublic&quot;:false,&quot;requireAttendeeApproval&quot;:false}
+
+19:08:45.513 response time in milliseconds: 1766
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 28 Apr 2022 13:38:45 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Connection: close
+1 &lt; Vary: Accept-Encoding
+1 &lt; Vary: Origin
+{&quot;data&quot;:{&quot;avatarViewAttribute&quot;:{},&quot;details&quot;:&quot;All State of Player are playing to Cricket&quot;,&quot;eventEndTime&quot;:&quot;2023-12-22T11:30:00Z&quot;,&quot;eventStartTime&quot;:&quot;2023-11-22T06:20:00Z&quot;,&quot;id&quot;:&quot;c9l9hpa722er3esor48g&quot;,&quot;isModerated&quot;:false,&quot;isPostingOpen&quot;:false,&quot;isPublic&quot;:false,&quot;location&quot;:&quot;https://www.google.com/maps/place/Pune,+Maharashtra/&quot;,&quot;owner&quot;:{&quot;attendeeResponseStatus&quot;:&quot;attending&quot;,&quot;coverPic&quot;:&quot;&quot;,&quot;id&quot;:&quot;c9l9hpa722er3esor490&quot;,&quot;name&quot;:&quot;Mike&quot;,&quot;profilePic&quot;:&quot;c99bchhll4tiqi3bcd40_596x596.jpeg&quot;,&quot;profilePicThumb&quot;:&quot;&quot;,&quot;role&quot;:&quot;owner&quot;,&quot;status&quot;:&quot;accepted&quot;,&quot;userName&quot;:&quot;Mike&quot;,&quot;user_id&quot;:&quot;c8evsrdkh4do722jbse0&quot;},&quot;pictureViewAttribute&quot;:{},&quot;requireAttendeeApproval&quot;:false,&quot;status&quot;:&quot;active&quot;,&quot;subtitle&quot;:&quot;National Level Of Game&quot;,&quot;title&quot;:&quot;National Game of Cricket&quot;,&quot;totalAttendees&quot;:0},&quot;error&quot;:false,&quot;message&quot;:&quot;OK&quot;,&quot;status&quot;:200}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">33</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">19:08:45.549 [print] {
+  &quot;data&quot;: {
+    &quot;avatarViewAttribute&quot;: {
+    },
+    &quot;details&quot;: &quot;All State of Player are playing to Cricket&quot;,
+    &quot;eventEndTime&quot;: &quot;2023-12-22T11:30:00Z&quot;,
+    &quot;eventStartTime&quot;: &quot;2023-11-22T06:20:00Z&quot;,
+    &quot;id&quot;: &quot;c9l9hpa722er3esor48g&quot;,
+    &quot;isModerated&quot;: false,
+    &quot;isPostingOpen&quot;: false,
+    &quot;isPublic&quot;: false,
+    &quot;location&quot;: &quot;https://www.google.com/maps/place/Pune,+Maharashtra/&quot;,
+    &quot;owner&quot;: {
+      &quot;attendeeResponseStatus&quot;: &quot;attending&quot;,
+      &quot;coverPic&quot;: &quot;&quot;,
+      &quot;id&quot;: &quot;c9l9hpa722er3esor490&quot;,
+      &quot;name&quot;: &quot;Mike&quot;,
+      &quot;profilePic&quot;: &quot;c99bchhll4tiqi3bcd40_596x596.jpeg&quot;,
+      &quot;profilePicThumb&quot;: &quot;&quot;,
+      &quot;role&quot;: &quot;owner&quot;,
+      &quot;status&quot;: &quot;accepted&quot;,
+      &quot;userName&quot;: &quot;Mike&quot;,
+      &quot;user_id&quot;: &quot;c8evsrdkh4do722jbse0&quot;
+    },
+    &quot;pictureViewAttribute&quot;: {
+    },
+    &quot;requireAttendeeApproval&quot;: false,
+    &quot;status&quot;: &quot;active&quot;,
+    &quot;subtitle&quot;: &quot;National Level Of Game&quot;,
+    &quot;title&quot;: &quot;National Game of Cricket&quot;,
+    &quot;totalAttendees&quot;: 0
+  },
+  &quot;error&quot;: false,
+  &quot;message&quot;: &quot;OK&quot;,
+  &quot;status&quot;: 200
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
